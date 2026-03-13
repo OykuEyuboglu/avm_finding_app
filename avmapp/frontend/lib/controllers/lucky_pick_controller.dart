@@ -14,12 +14,7 @@ class LuckyPickController {
       if (districtId != null) 'district_id': districtId.toString(),
     };
 
-    // final uri = Uri.http('localhost:3000', '/malls-by-activities', queryParams);
-    final uri = Uri.http(
-      '192.168.1.27:3000',
-      '/malls-by-activities',
-      queryParams,
-    );
+    final uri = Uri.http('localhost:3000', '/malls-by-activities', queryParams);
 
     final response = await http.get(uri);
 

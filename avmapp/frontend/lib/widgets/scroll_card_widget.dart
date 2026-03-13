@@ -38,7 +38,7 @@ class _ScrollCardWidgetState extends State<ScrollCardWidget> {
   @override
   Widget build(BuildContext context) {
     return SizedBox(
-      height: 170, // 🔽 Genel kart yüksekliği daha kısa
+      height: 170, 
       width: double.infinity,
       child: PageView.builder(
         controller: _pageController,
@@ -104,7 +104,6 @@ class _ScrollCardWidgetState extends State<ScrollCardWidget> {
                                   ),
                             ),
                           ),
-                          // ✅ Yazı alanı daha kısa padding
                           Padding(
                             padding: const EdgeInsets.symmetric(
                               horizontal: 6,

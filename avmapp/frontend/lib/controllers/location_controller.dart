@@ -3,7 +3,6 @@ import 'package:geolocator/geolocator.dart';
 import '../models/mall.dart';
 
 class NearbyController {
-  /// Belirli mesafe içindeki AVM'leri getir (örn. 10 km)
   static Future<List<Mall>> fetchNearbyMalls(
     Position userPosition, {
     double maxDistanceInKm = 10,
@@ -20,7 +19,7 @@ class NearbyController {
         mall.longitude!,
       );
       return distance <=
-          (maxDistanceInKm * 1000); // metre cinsinden karşılaştır
+          (maxDistanceInKm * 1000);
     }).toList();
   }
 }

@@ -7,11 +7,9 @@ import 'pages/home_page.dart';
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
 
-  // Hive başlatma ve kutu açma
   await Hive.initFlutter();
   await Hive.openBox<String>('notesBox');
 
-  // Onboarding durumu kontrolü
   SharedPreferences prefs = await SharedPreferences.getInstance();
   bool seenOnboarding = prefs.getBool('seenOnboarding') ?? false;
 
@@ -29,7 +27,7 @@ class MyApp extends StatelessWidget {
       title: 'AVMNEREDE',
       debugShowCheckedModeBanner: false,
       theme: ThemeData(
-        fontFamily: 'Quicksand', // ✅ Tüm uygulamaya Quicksand yazı tipi
+        fontFamily: 'Quicksand',
         primaryColor: const Color(0xFF41436A),
         useMaterial3: true,
       ),

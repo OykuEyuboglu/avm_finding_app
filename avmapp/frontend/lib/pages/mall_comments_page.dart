@@ -119,7 +119,7 @@ class _MallCommentsPageState extends State<MallCommentsPage> {
                                             fontSize: 13,
                                             color:
                                                 Colors
-                                                    .grey, // 🔹 Gri renk eklendi
+                                                    .grey,
                                           ),
                                         ),
                                       );

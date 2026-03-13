@@ -25,7 +25,7 @@ class FilterSection<T> extends StatelessWidget {
         title,
         style: const TextStyle(fontSize: 18, fontWeight: FontWeight.bold),
       ),
-      initiallyExpanded: false, // 🔧 Artık kapalı başlıyor
+      initiallyExpanded: false,
       children:
           items.map((item) {
             final id = getId(item);

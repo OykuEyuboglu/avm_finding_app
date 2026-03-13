@@ -14,7 +14,7 @@ class FilterResetTile extends StatelessWidget {
         style: TextStyle(fontWeight: FontWeight.bold, color: Colors.red),
       ),
       onTap: () {
-        Navigator.pop(context); // Sıfırlama üst componentte yapılacak
+        Navigator.pop(context);
       },
     );
   }

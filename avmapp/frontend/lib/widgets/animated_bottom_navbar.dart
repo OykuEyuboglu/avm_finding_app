@@ -44,10 +44,10 @@ class AnimatedBottomNavBar extends StatelessWidget {
       currentIndex: currentIndex,
       onTap: (index) => _onTabTapped(context, index),
       type: BottomNavigationBarType.fixed,
-      elevation: 0, // ✅ Üstteki gri çizgiyi kaldırır
-      backgroundColor: const Color(0xFFF2E7FA), // ✅ Açık lila arkaplan
-      selectedItemColor: const Color(0xFF1B1F3B), // Lacivert seçili ikon/metin
-      unselectedItemColor: const Color(0xFF999999), // Gri pasif ikon/metin
+      elevation: 0,
+      backgroundColor: const Color(0xFFF2E7FA),
+      selectedItemColor: const Color(0xFF1B1F3B),
+      unselectedItemColor: const Color(0xFF999999),
       selectedFontSize: 15,
       unselectedFontSize: 12,
       showUnselectedLabels: true,
