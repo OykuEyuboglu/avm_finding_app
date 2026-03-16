@@ -272,3 +272,5 @@ This project demonstrates:
 # 👩‍💻 Authors
 
 **Dila Öykü Eyüboğlu**  
+**Burcu Kösedağı**  
+**Azra Culhacı**  
